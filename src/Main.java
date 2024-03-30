@@ -16,10 +16,8 @@ public class Main {
             Booking booking = new Booking();
             boolean isRunning = true;
             while(isRunning) {
-                try {
                     System.out.println("1. Book ticket\n2.Cancel ticket\n3.show chart\n4. Exit");
-                    int n = sc.nextInt();
-                    sc.nextLine();
+                    int n = sc.nextInt();sc.nextLine();
                     switch (n) {
                         case 1:
                             System.out.println("Enter Source Destination and no of seats with space between");
@@ -52,9 +50,6 @@ public class Main {
                             System.out.println("Exited the System!!!");
                             break;
                     }
-                }catch (Exception e){
-                    System.out.println("Input is not in correct format");
-                }
             }
         }
     }
